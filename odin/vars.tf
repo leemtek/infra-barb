@@ -58,3 +58,14 @@ variable "BARB_ODIN_TAG_ENV" {
 ## Security Group
 variable "BARB_SG_WHITELIST_IP_DUANE" { type = string }
 
+## Settings: aws_db_instance
+variable "BARB_ODIN_ADI_ALLOCATED_STORAGE" { type = number }
+variable "BARB_ODIN_ADI_ENGINE" { type = string }
+variable "BARB_ODIN_ADI_ENGINE_VERSION" { type = string }
+variable "BARB_ODIN_ADI_INSTANCE_CLASS" { type = string }
+variable "BARB_ODIN_ADI_USERNAME" { type = string }
+variable "BARB_ODIN_ADI_PASSWORD" { type = string }
+variable "BARB_ODIN_ADI_PARAMETER_GROUP_NAME" { type = string }
+variable "BARB_ODIN_ADI_SKIP_FINAL_SNAPSHOT" { type = bool }
+variable "BARB_SG_WHITELIST_IP_OPEN_CIDR" { type = list(string) }
+variable "BARB_SG_WHITELIST_VPC_CIDR" { type = list(string) }
